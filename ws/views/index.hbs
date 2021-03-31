@@ -1,0 +1,269 @@
+{{!-- 
+    Invisible dummy frame to redirect response answer 
+    to this to don't reload the page after request.
+--}}
+		<div class="container-contact2"> 
+
+<h1 id="baslik">AkyaMT2</h1>
+<iframe style="display: none" name="dummyframe" id="dummyframe"></iframe>
+
+<div class="form-box">
+<h1>Bütün Odalar Mesaj Gönder</h1>
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+<br><br>
+<form action="/sendMessageAll" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+    <input type="hidden" name="token" value="{{ token }}" />
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    <input type="text" name="messageall" placeholder="Mesaj">
+
+    {{!-- Send button --}}
+    <input type="submit" class="cupid-green" value="Gonder">
+
+</form>
+</div>
+
+
+
+ <div class="form-box">
+<h1>Para Ver</h1>
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+
+<form action="/sendMoneyPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+    <input type="hidden" name="token" value="{{ token }}" />
+   
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    
+    <input type="text" name="id" placeholder="Oyuncu ID">
+        <input type="text" name="miktar" placeholder="Miktar">
+    
+
+    <select name="won">
+        <option value="won">Won</option>
+        <option value="yang">Yang</option>
+    </select>
+    <br>
+    
+
+
+    {{!-- Send button --}}
+    <input type="submit" class="cupid-green" value="Gonder">
+
+</form>
+</div>
+
+ <div class="form-box">
+<h1>Para Kaldır</h1>
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+
+<form action="/removeMoneyPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+    <input type="hidden" name="token" value="{{ token }}" />
+   
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    
+    <input type="text" name="id" placeholder="Oyuncu ID">
+        <input type="text" name="miktar" placeholder="Miktar">
+    
+
+    <select name="won">
+        <option value="won">Won</option>
+        <option value="yang">Yang</option>
+    </select>
+    <br>
+    
+
+
+    {{!-- Send button --}}
+    <input type="submit" class="cupid-green" value="Gonder">
+
+</form>
+</div>
+
+<div class="form-box">
+<h1>Para Sıfırla</h1>
+
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+<br><br>
+<form action="/resetMoneyPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+   
+    <input type="hidden" name="token" value="{{ token }}" />
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    <input type="text" name="id" placeholder="Oyuncu ID">
+
+    <select name="won">
+        <option value="won">Won</option>
+        <option value="yang">Yang</option>
+        <option value="all">All</option>
+    </select>
+    
+    {{!-- Send cupid-green --}}
+    <input type="submit" class="cupid-green" value="Gonder">
+</form>
+</div>
+
+
+
+
+
+
+<div class="form-box">
+<h1>Eşya Ekle</h1>
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+
+<form action="/giveItemPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+    <input type="hidden" name="token" value="{{ token }}" />
+   
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    
+    <input type="text" name="id" placeholder="Oyuncu ID">
+        <input type="text" name="miktar" placeholder="Miktar">
+    
+
+    <select name="itemtype">
+        <option value="solucan">Solucan</option>
+        <option value="hamur">Hamur</option>
+        <option value="minikbalik">Minik Balık</option>
+        <option value="zargana">Zargana</option>
+        <option value="tekir">Tekir</option>
+        <option value="ringa">Ringa</option>
+        <option value="somon">Somon</option>
+        <option value="sudak">Sudak</option>
+        <option value="buyuksudak">Büyük Sudak</option>
+        <option value="siyah">Siyah Boya</option>
+        <option value="beyaz">Beyaz Boya</option>
+        <option value="kahverengi">Kahverengi Boya</option>
+        <option value="kirmizi">Kırmızı Boya</option>
+        <option value="sari">Sarı Boya</option>
+        <option value="boyacikarici">Boya Çıkarıcı</option>
+        <option value="binci">Beyaz İnci</option>
+        <option value="minci">Mavi İnci</option>
+        <option value="kinci">Kırmızı İnci</option>
+        <option value="lucyyuzuk">Lucy Yüzük</option>
+        <option value="altinyuzuk">Altın Yüzük</option>
+        <option value="ban">Ban Hakkı</option>
+    </select>
+    <br>
+    
+
+
+    {{!-- Send cupid-green --}}
+    <input type="submit" class="cupid-green" value="Gonder">
+
+</form>
+</div>
+
+<div class="form-box">
+<h1>Olta</h1>
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+
+<form action="/setOltaPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+    <input type="hidden" name="token" value="{{ token }}" />
+   
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    
+    <input type="text" name="id" placeholder="Oyuncu ID">
+        <input type="text" name="miktar" placeholder="Miktar">
+    
+
+    <select name="select">
+        <option value="balik">Tutulan Balık</option>
+        <option value="level">Level</option>
+    </select>
+    <br>
+    
+
+
+    {{!-- Send button --}}
+    <input type="submit" class="cupid-green" value="Gonder">
+
+</form>
+</div>
+
+
+<div class="form-box">
+<h1>Sıfırla</h1>
+
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+<br><br>
+<form action="/resetEverythinkPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+   
+    <input type="hidden" name="token" value="{{ token }}" />
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    <input type="text" name="id" placeholder="Oyuncu ID">
+
+   
+    
+    {{!-- Send cupid-green --}}
+    <input type="submit" class="cupid-green-red" value="Onayla ( Bu İşlem Kalıcıdır )">
+</form>
+</div>
+
+
+<div class="form-box">
+<h1>Yasakla</h1>
+
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+<br><br>
+<form action="/banPersonPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+   
+    <input type="hidden" name="token" value="{{ token }}" />
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    <input type="text" name="id" placeholder="Oyuncu ID">
+
+   
+    
+    {{!-- Send cupid-green --}}
+    <input type="submit" class="cupid-green-red" value="Yasakla">
+</form>
+</div>
+
+
+<div class="form-box">
+<h1>Yasaklamayı Kaldır</h1>
+
+<hr style="width:50%;height:2px; background-color:rgb(31, 31, 31); text-align:center; margin-top:-15px; ">
+<br><br>
+<form action="/unbanPersonPlease" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
+   
+    <input type="hidden" name="token" value="{{ token }}" />
+    {{!-- Channel selector --}}
+
+    {{!-- Message text input --}}
+    <input type="text" name="id" placeholder="Oyuncu ID">
+
+   
+    
+    {{!-- Send cupid-green --}}
+    <input type="submit" class="cupid-green-red" value="Yasaklamayı Kaldır">
+</form>
+</div>
+
+
+
+
+
+</div>

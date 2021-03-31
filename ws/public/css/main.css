@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    height: 100%;
+    background-image: url("https://cdn.discordapp.com/attachments/605492615688749115/751124282243022858/bg-01.jpg");
+    background-attachment: fixed;
+
+}
+
+#baslik{
+    text-align: center;
+}
+
+.cupid-green {
+  background-color: #7fbf4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+  background-image: linear-gradient(top, #7fbf4d, #63a62f);
+  border: 1px solid #63a62f;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+  box-shadow: inset 0 1px 0 0 #96ca6d;
+  color: #fff;
+  font: bold 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  padding: 7px 0 8px 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 #4c9021;
+  width: 150px; }
+ .cupid-green:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer; }
+  .cupid-green:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }
+
+
+
+
+
+    .cupid-green-red {
+      background-color: #7fbf4d;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+      background-image: -webkit-linear-gradient(top, #ff0000, #8f0000);
+      background-image: -moz-linear-gradient(top, #ff0000, #8f0000);
+      background-image: -ms-linear-gradient(top, #ff0000, #8f0000);
+      background-image: -o-linear-gradient(top, #ff0000, #8f0000);
+      background-image: linear-gradient(top, #ff0000, #8f0000);
+      border: 1px solid #ff0000;
+      border-bottom: 1px solid #8f0000;
+      border-radius: 3px;
+      -webkit-box-shadow: inset 0 1px 0 0 rgb(85, 34, 34);
+      box-shadow: inset 0 1px 0 0 rgb(85, 34, 34);
+      color: #fff;
+      font: bold 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+      padding: 7px 0 8px 0;
+      text-align: center;
+      text-shadow: 0 -1px 0 #ff0000;
+      width: 180px; }
+     .cupid-green-red:hover {
+        background-color: #ff0000;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+        background-image: -webkit-linear-gradient(top, #8f0000, #ff0000);
+        background-image: -moz-linear-gradient(top, #8f0000, #ff0000);
+        background-image: -ms-linear-gradient(top, #8f0000, #ff0000);
+        background-image: -o-linear-gradient(top, #8f0000, #ff0000);
+        background-image: linear-gradient(top, #8f0000, #ff0000);
+        -webkit-box-shadow: inset 0 1px 0 0 rgb(85, 34, 34);
+        box-shadow: inset 0 1px 0 0 rgb(85, 34, 34);
+        cursor: pointer; }
+      .cupid-green-red:active {
+        border: 1px solid #8f0000;
+        border-bottom: 1px solid #ff0000;
+        -webkit-box-shadow: inset 0 0 8px 4px #8f0000, 0 1px 0 0 #eeeeee;
+        box-shadow: inset 0 0 8px 4px #8f0000, 0 1px 0 0 #eeeeee; }
+
+
+
+
+.container-contact2 {
+    position: absolute;
+    top:-0.5px;
+    left:-0.5px;
+    width: 100%;  
+    padding:0px;
+    margin: 0px;
+    height: 1947px;
+
+    
+    background: rgba(219,21,99,0.8);
+    background: -webkit-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+    background: -o-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+    background: -moz-linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+    background: linear-gradient(45deg, rgba(213,0,125,0.8), rgba(229,57,53,0.8));
+  }
+
+p, h1, h2, h3, h4, h5, h6, a, table, tr, td, th, li {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+input[type=text]{
+    width:90%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+
+.form-box {
+    text-align: center;
+    float: left;
+    
+    margin-left:2%;
+    margin-top:3%;
+    padding-top: 1px;
+    width: 30%;
+    height: 240px;
+    border-width: 4px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 8px;
+
+    
+    background-color:#fff;
+  }
+  
+
+  .form-box-login {
+    text-align: center;
+    float: left;
+    
+    margin-left: 35%;
+    margin-top:15%;
+    padding-top: 1px;
+    width: 30%;
+    height: 240px;
+    border-width: 4px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 8px;
+
+    
+    background-color:#fff;
+  }
+  
+
+  .form-box-red {
+    text-align: center;
+    float: left;
+    
+    margin-left:2%;
+    margin-top:3%;
+    padding-top: 1px;
+    width: 30%;
+    height: 240px;
+    border-width: 4px;
+    border-color: #ff0000;
+    border-style: solid;
+    border-radius: 8px;
+
+    
+    background-color:#fff;
+  }
+
+  .form-box h1 {
+    color: black;
+
+}
+
+.form-box-login h1 {
+    color: black;
+
+}
+
+.form-box-red h1 {
+    color: black;
+
+}
+

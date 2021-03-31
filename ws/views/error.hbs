@@ -1,0 +1,31 @@
+<div class="container-contact2"> 
+
+<div class="form-box-login">
+    
+    <br>
+<h1>Giriş Yap</h1>
+<br>
+<form >
+   
+
+ 
+    <input type="text" id="txtAd" placeholder="Token Girin">
+
+  
+    <br><br>
+    <input type="button" class="cupid-green" id="btn" value="Giriş Yap">
+</form>
+</div>
+
+
+
+<script>
+		
+		var ad=document.getElementById("txtAd");
+		document.getElementById("btn")
+            .onclick = function(){
+                window.location = ("http://34.107.38.53:1604/?token="+ad.value)                     
+             };
+</script>
+</div>
+   
